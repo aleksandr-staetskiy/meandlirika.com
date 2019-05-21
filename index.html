@@ -22,13 +22,22 @@
 <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-collapse navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-collapse navbar-dark bg-dark fixed-top navbar-right" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Me and Lirika</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-right">
+                <li class="nav-item">
+                    <a class="js-scroll-trigger" href="#enroll">
+                        <button class="btn btn-primary navbar-btn" aria-expanded="false">Записаться</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#about">Описание программы</a>
@@ -48,15 +57,21 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#reviews">Отзывы</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#enroll">Отзывы</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="bg-primary text-white">
+    <header class="bg-secondary text-white">
         <div class="container text-center">
             <h1>Me and Lirika</h1>
             <p class="lead">Me and Lirika</p>
+            <a class="js-scroll-trigger" href="#enroll">
+                <button class="btn btn-primary btn-lg">Записаться</button>
+            </a>
         </div>
     </header>
 
@@ -102,10 +117,10 @@
         </div>
     </section>
 
-    <section id="plans">
+    <section id="plans" class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-12 mx-auto">
                     <h2>Варианты курсов</h2>
                     <p class="lead">Вы можете выбрать свой формат курса:</p>
                     <div class="table-responsive">
@@ -153,9 +168,9 @@
                             <tfoot class="thead-inverse">
                                 <tr>
                                     <th></th>
-                                    <th><button class="btn btn-primary">Записаться</button></th>
-                                    <th><button class="btn btn-primary">Записаться</button></th>
-                                    <th><button class="btn btn-primary">Записаться</button></th>
+                                    <th><a class="js-scroll-trigger" href="#enroll"><button class="btn btn-primary">Записаться</button></a></th>
+                                    <th><a class="js-scroll-trigger" href="#enroll"><button class="btn btn-primary">Записаться</button></a></th>
+                                    <th><a class="js-scroll-trigger" href="#enroll"><button class="btn btn-primary">Записаться</button></a></th>
                                 </tr>
                             </tfoot>
                         </table>
@@ -170,18 +185,38 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Вопросы</h2>
-                    <p class="lead">Вопросы</p>
+                    <p class="lead">Какой результат я получу по завершению курса?</p>
+                    <p>Ты научишься танцевать базовые и вариационные движения тверка, научишься импровизировать, станешь более пластичной и подтянешь свою фигуру  за счет  регулярных тренировок!</p>
+                    <p class="lead">Смогу ли я начать курс позже?</p>
+                    <p>Да! Вы можете проходить программу в собственном ритме.</p>
+                    <p class="lead">Кому я смогу задать вопросы по курсу?</p>
+                    <p>Вы будете общаться со своим тренером лично: задавать вопросы, делиться результатами, получать корректировки и поддержку.</p>
+                    <p class="lead">Доступ к видео-урокам пропадет по истечению месяца?</p>
+                    <p>Нет! Все тренировки принадлежат Вам после приобретения курса, и Вы можете возвращаться к ним снова и снова.</p>
+                    <p class="lead">Есть ли противопоказания?</p>
+                    <p>Данные тренировки подходят для любого возраста и только улучшат Ваше самочувствие. Но, если у Вас есть медицинские противопоказания, нужно посоветоваться с врачом.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="reviews">
+    <section id="reviews" class="bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Отзывы</h2>
                     <p class="lead">Отзывы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="enroll">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Записаться</h2>
+                    <p class="lead">Записаться</p>
                 </div>
             </div>
         </div>
