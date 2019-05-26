@@ -1,3 +1,7 @@
+th, td {
+    text-align: center;
+}
+
 @media (max-width: 767px) {
     body {
         font-size: 10px;
@@ -7,7 +11,7 @@
         font-size: 12px;
     }
 
-    .plans-mobile {
+    .plans-responsive {
         font-size: 8px;
     }
 
@@ -41,5 +45,11 @@
     .table-responsive::-webkit-scrollbar-track {
         border-radius: 10px;
         background-color: #ffffff;
+    }
+}
+
+@media (min-width: 768px) {
+    .plans-responsive {
+        font-size: 12px;
     }
 }
