@@ -424,7 +424,14 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <h3>Записаться</h3>
-                    <form id="contact-form" action="https://formspree.io/support@meandlirika.com" method="POST" role="form">
+                    <p>Реквизиты для оплаты (комментарий к переводу не указывать):</p>
+                    <ul>
+                        <li><strong>4276 5500 7527 0374</strong> (для перевода по номеру карты)</li>
+                        <li><strong>+7(952)384-3976</strong> (для перевода по телефону)</li>
+                    </ul>
+                    <p class="lead">Для записи достаточно заполнить форму ниже, прикрепив чек оплаты выбранного вами курса.</p>
+                    <p><em>Комментарий к платежу НЕ нужен!</em></p>
+                    <form id="contact-form" action="https://mailthis.to/support@meandlirika.com" method="POST" encType="multipart/form-data">
                         <div class="controls">
                             <div class="row">
                                 <div class="col-md-6">
@@ -465,7 +472,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="form_payment">Чек:</label>
-                                        <input id="form_payment" name="payment" type="file" class="form-control-file" required="required" data-error="Пожалуйста, прикрепите чек с оплатой.">
+                                        <input id="form_payment" type="file" name="file" class="form-control-file" required="required">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -479,6 +486,8 @@
                                 </div>
                             </div>
                         </div>
+                        <input type="hidden" name="_subject" value="Новая заявка">
+                        <input type="hidden" name="_confirmation" value="Успех! Скоро я обязательно с Вами свяжусь!">
                     </form>
                 </div>
             </div>
